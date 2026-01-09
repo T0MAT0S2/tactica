@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TACTICA</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/3522/3522092.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <style>
+        @font-face {
+            font-family: 'ChosunIlboMyungjo';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+            font-weight: normal;
+            font-display: swap;
+        }
+        :root {
+            --bg-main: #0a0908;
+            --bg-panel: #1e1b18;
+            --bg-inset: #141210;
+            --border-color: #4a3f35;
+            --text-primary: #f2e9e4;
+            --text-secondary: #a99985;
+            --accent-gold: #c6a779;
+            --team-a-color: #d4b28c;
+            --team-b-color: #8c785d;
+            --accent-green: #5aa469;
+            --accent-red: #a13d3d;
+            --accent-blue: #5f8fdb;
+        }
+        body {
+            font-family: 'ChosunIlboMyungjo', 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            background-image: url('https://www.transparenttextures.com/patterns/dark-paths.png');
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--bg-inset); }
+        ::-webkit-scrollbar-thumb { background: #4f4f4f; border-radius: 3px; }
+        
+        /* Grid Animations */
+        @keyframes bubble-fade-in-out {
+            0% { opacity: 0; transform: translate(-50%, -100%); }
+            10% { opacity: 1; transform: translate(-50%, -130%); }
+            90% { opacity: 1; transform: translate(-50%, -130%); }
+            100% { opacity: 0; transform: translate(-50%, -150%); }
+        }
+        .speech-bubble-anim {
+            animation: bubble-fade-in-out 5s ease-in-out forwards;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "firebase/": "https://esm.sh/firebase@^12.7.0/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "TACTICA",
+  "description": "A multiplayer turn-based tactical battle simulator with real-time synchronization, YouTube BGM support, and customizable characters.",
+  "requestFramePermissions": []
+}
